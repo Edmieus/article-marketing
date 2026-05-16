@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كيف تضاعف مبيعاتك باستخدام التسويق الرقمي في 2025 | Edmieus AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-deep: #060612;
+      --bg-card: #0d0d24;
+      --bg-card2: #111128;
+      --accent-purple: #7c3aed;
+      --accent-cyan: #06b6d4;
+      --accent-pink: #db2777;
+      --text-primary: #e2e8f0;
+      --text-muted: #94a3b8;
+      --border: rgba(124,58,237,0.25);
+      --glow-purple: 0 0 30px rgba(124,58,237,0.35);
+      --glow-cyan: 0 0 30px rgba(6,182,212,0.35);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: var(--bg-deep);
+      color: var(--text-primary);
+      line-height: 1.75;
+      direction: rtl;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: relative;
+      background: linear-gradient(135deg, #0d0d24 0%, #1a0a3e 50%, #060a1e 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .logo-wrap svg { height: 60px; width: auto; filter: drop-shadow(0 0 12px rgba(124,58,237,0.5)); }
+    .header-meta { text-align: left; }
+    .header-meta .tag {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      padding: 0.25rem 0.85rem;
+      border-radius: 20px;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+    .header-meta time { display: block; font-size: 0.82rem; color: var(--text-muted); }
+
+    .hero {
+      position: relative;
+      padding: 5rem 3rem 4rem;
+      text-align: center;
+      background: linear-gradient(180deg, #0d0d30 0%, var(--bg-deep) 100%);
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%);
+      top: -100px; left: 50%; transform: translateX(-50%);
+      pointer-events: none;
+    }
+    .hero-kicker {
+      font-size: 0.78rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      font-weight: 900;
+      line-height: 1.25;
+      background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 50%, var(--accent-purple) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      max-width: 850px;
+      margin: 0 auto 2rem;
+    }
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto 2.5rem;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+    .stat-pill {
+      text-align: center;
+    }
+    .stat-pill .num {
+      font-size: 2rem;
+      font-weight: 900;
+      font-family: 'Orbitron', monospace;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-pill .label { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.25rem; }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .section-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .section-card:hover {
+      border-color: rgba(124,58,237,0.55);
+      transform: translateY(-3px);
+      box-shadow: var(--glow-purple);
+    }
+    .section-card::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 120px; height: 120px;
+      background: radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .section-num {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.7rem;
+      color: var(--accent-cyan);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    .section-card h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1.25rem;
+      line-height: 1.35;
+    }
+    .section-card p { color: var(--text-muted); margin-bottom: 1rem; font-size: 0.97rem; }
+    .section-card p:last-child { margin-bottom: 0; }
+
+    .stat-callout {
+      background: linear-gradient(135deg, rgba(124,58,237,0.15), rgba(6,182,212,0.1));
+      border: 1px solid rgba(6,182,212,0.3);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .stat-callout .icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 0.1rem; }
+    .stat-callout .content strong {
+      display: block;
+      color: var(--accent-cyan);
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+    }
+    .stat-callout .content span { font-size: 0.82rem; color: var(--text-muted); }
+    .stat-callout .content a { color: var(--accent-purple); font-size: 0.78rem; }
+
+    .hl { 
+      background: linear-gradient(90deg, rgba(124,58,237,0.25), rgba(6,182,212,0.15));
+      border-right: 3px solid var(--accent-purple);
+      padding: 0.1rem 0.6rem 0.1rem 0.4rem;
+      border-radius: 4px;
+      color: #e2e8f0;
+    }
+
+    .hook-box {
+      border-right: 4px solid var(--accent-pink);
+      background: rgba(219,39,119,0.08);
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      color: #f1a8c9;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #0a0520 0%, #080818 100%);
+      border-top: 1px solid var(--border);
+      padding: 3rem 3rem 1.5rem;
+    }
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .footer-brand svg { height: 50px; width: auto; margin-bottom: 0.75rem; filter: drop-shadow(0 0 10px rgba(124,58,237,0.4)); }
+    .footer-brand p { font-size: 0.82rem; color: var(--text-muted); max-width: 260px; line-height: 1.6; }
+    .footer-links h4 { font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-cyan); margin-bottom: 0.85rem; }
+    .footer-links ul { list-style: none; }
+    .footer-links ul li { margin-bottom: 0.5rem; }
+    .footer-links ul li a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+    .footer-links ul li a:hover { color: var(--accent-purple); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding-top: 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="180" height="54">
+      <defs>
+        <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#7c3aed"/>
+          <stop offset="50%" stop-color="#06b6d4"/>
+          <stop offset="100%" stop-color="#ec4899"/>
+        </linearGradient>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+          <feMerge>
+            <feMergeNode in="coloredBlur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <text x="200" y="50" font-family="'Orbitron', monospace" font-size="36" font-weight="900" fill="url(#neonGrad)" text-anchor="middle" filter="url(#glow)" letter-spacing="4">EDMIEUS</text>
+      <line x1="90" y1="65" x2="170" y2="65" stroke="#7c3aed" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.6"/>
+      <circle cx="175" cy="65" r="2" fill="#06b6d4" opacity="0.8"/>
+      <line x1="225" y1="65" x2="310" y2="65" stroke="#7c3aed" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.6"/>
+      <text x="200" y="88" font-family="'Orbitron', monospace" font-size="12" fill="#94a3b8" text-anchor="middle" letter-spacing="5" opacity="0.8">AI AUTOMATION</text>
+    </svg>
+  </div>
+  <div class="header-meta">
+    <span class="tag">تسويق رقمي</span>
+    <time>مايو 2025 | Edmieus AI</time>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-kicker">دليل استراتيجي ← 2025</div>
+  <h1>كيف تضاعف مبيعاتك باستخدام التسويق الرقمي في 2025</h1>
+  <p class="hero-sub">خمس محطات مبنية على بيانات حقيقية، تأخذك من الفكرة إلى نتائج قابلة للقياس — بلا تضخيم، بلا حشو.</p>
+  <div class="hero-stats">
+    <div class="stat-pill">
+      <div class="num">5.5B</div>
+      <div class="label">مستخدم إنترنت عالمياً · 2025<br><span style="font-size:0.7rem">المصدر: DataReportal 2025</span></div>
+    </div>
+    <div class="stat-pill">
+      <div class="num">+63%</div>
+      <div class="label">نمو الإنفاق على الإعلانات الرقمية<br><span style="font-size:0.7rem">المصدر: Statista 2024</span></div>
+    </div>
+    <div class="stat-pill">
+      <div class="num">3.7×</div>
+      <div class="label">معدل عائد التسويق بالمحتوى<br><span style="font-size:0.7rem">المصدر: HubSpot State of Marketing 2024</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section-card">
+    <div class="section-num">01 · المحطة الأولى</div>
+    <h2>فهم الجمهور المستهدف عبر التحليل البياني المتقدم</h2>
+    <div class="hook-box">هل سبق أن أطلقت حملة بشعور أنها مثالية — ثم لم يتحرك رقم واحد؟ المشكلة ليست في المنتج، بل في أنك لم تعرف من تخاطب حقاً.</div>
+    <p>التحليل البياني الحديث يتجاوز أرقام الزيارات. <span class="hl">Google Analytics 4</span> يرسم مسار العميل من أول لمسة إلى آخر نقرة على "اشترِ الآن" — بما يشمل نقاط التوقف والتخلي. أضف إليه أدوات مثل Hotjar لخرائط الحرارة، وستعرف بالضبط أي فقرة تقرأ وأي زر يُتجاهل.</p>
+    <div class="stat-callout">
+      <div class="icon">📊</div>
+      <div class="content">
+        <strong>+74% من الشركات التي تعتمد على البيانات تتفوق على منافسيها في الإيرادات</strong>
+        <span>McKinsey Global Institute — Analytics comes of age (2023)</span><br>
+        <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/analytics-comes-of-age" target="_blank">← المصدر الكامل</a>
+      </div>
+    </div>
+    <p>الخطوة العملية: ابنِ "شخصية المشتري" (Buyer Persona) واحدة دقيقة بدلاً من عشر شخصيات مبهمة. شخصية واحدة واضحة تصنع رسائل حادة؛ عشر شخصيات تصنع محتوى لا يخاطب أحداً.</p>
+  </div>
+
+  <div class="section-card">
+    <div class="section-num">02 · المحطة الثانية</div>
+    <h2>تحسين محركات البحث (SEO) للمحتوى العربي في 2025</h2>
+    <div class="hook-box">محركات البحث لم تعد تقرأ الكلمات فقط — إنها الآن تفهم النوايا، وتكافئ المحتوى الذي يحل مشكلة حقيقية.</div>
+    <p>بعد تحديث Google Helpful Content (2024)، المعادلة تغيّرت: المحتوى الذي يُكتب "لمحركات البحث" فقط يُعاقَب. المحتوى الذي يحل مشكلة حقيقية لقارئ حقيقي يُكافأ. للمحتوى العربي تحديداً، المنافسة أضعف بكثير — وهذا فرصة.</p>
+    <div class="stat-callout">
+      <div class="icon">🔍</div>
+      <div class="content">
+        <strong>68% من تجارب الإنترنت تبدأ بمحرك بحث</strong>
+        <span>BrightEdge Research — Channel Report 2024</span><br>
+        <a href="https://videos.brightedge.com/research-report/BrightEdge_ChannelReport2014_ce.pdf" target="_blank">← المصدر</a>
+      </div>
+    </div>
+    <p>الاستراتيجية: ركّز على الكلمات المفتاحية الطويلة (Long-tail keywords) بالعربية الفصحى + العامية حسب جمهورك. مثال: "أفضل تطبيقات التسويق الإلكتروني للمتاجر الصغيرة 2025" أفضل بكثير من "تسويق إلكتروني".</p>
+  </div>
+
+  <div class="section-card">
+    <div class="section-num">03 · المحطة الثالثة</div>
+    <h2>الإعلانات المدفوعة المبنية على البيانات (Paid Media)</h2>
+    <div class="hook-box">كل ريال إعلاني بلا استهداف دقيق هو ريال يذهب لمنافسك. الفارق بين الحملة الخاسرة والرابحة غالباً ليس في الميزانية — بل في الاستهداف.</div>
+    <p>نماذج التعلم الآلي في 2025 تعدّل توزيع الميزانية بين المنصات (Meta, TikTok, LinkedIn, Snapchat) لحظة بلحظة بناءً على الأداء الفعلي. ميزة <span class="hl">Advantage+ Shopping Campaigns</span> على Meta تحقق متوسط تخفيض بنسبة 17% في تكلفة الاكتساب مقارنة بالحملات اليدوية.</p>
+    <div class="stat-callout">
+      <div class="icon">💡</div>
+      <div class="content">
+        <strong>الإعلانات المخصّصة تحقق معدل نقر أعلى بـ 202% من الإعلانات العامة</strong>
+        <span>Mailchimp Marketing Statistics 2024</span><br>
+        <a href="https://mailchimp.com/resources/email-marketing-benchmarks/" target="_blank">← المصدر</a>
+      </div>
+    </div>
+    <p>نقطة عملية: ابدأ بـ A/B test على عنوان الإعلان فقط — لا تغيّر كل شيء في نفس الوقت. العنوان يتحكم في 70-80% من قرار النقر.</p>
+  </div>
+
+  <div class="section-card">
+    <div class="section-num">04 · المحطة الرابعة</div>
+    <h2>التسويق بالمحتوى التفاعلي</h2>
+    <div class="hook-box">القارئ الذي يُشارك في محتواك لا ينسى علامتك — والقارئ الذي يقرأ فقط قد لا يتذكرك غداً.</div>
+    <p>المحتوى التفاعلي — استطلاعات، حاسبات ROI، اختبارات "ما الأنسب لي" — يرفع وقت البقاء على الصفحة بشكل ملحوظ، ويرسل إشارات إيجابية لخوارزميات البحث. وقت البقاء (Time on page) هو أحد أقوى مؤشرات جودة المحتوى التي يرصدها Google.</p>
+    <div class="stat-callout">
+      <div class="icon">🎯</div>
+      <div class="content">
+        <strong>المحتوى التفاعلي يولّد ضعف عدد المحادثات مقارنة بالمحتوى الثابت</strong>
+        <span>Demand Gen Report, Content Preferences Survey 2024</span><br>
+        <a href="https://www.demandgenreport.com/resources/research/2023-content-preferences-report" target="_blank">← المصدر</a>
+      </div>
+    </div>
+    <p>مثال قابل للتطبيق اليوم: أضف حاسبة "ما هي تكلفة اكتساب عميل واحد في مجالك؟" على صفحتك — الزائر يُدخل أرقامه، يحصل على نتيجة مخصصة، وأنت تجمع بيانات قيّمة.</p>
+  </div>
+
+  <div class="section-card">
+    <div class="section-num">05 · المحطة الخامسة</div>
+    <h2>الأتمتة وتحليل الأداء في الوقت الفعلي</h2>
+    <div class="hook-box">الفارق بين منشأة تنمو وأخرى تتعثّر غالباً ليس في العمل الأكثر — بل في العمل الأذكى. الأتمتة هي الطريق.</div>
+    <p>منصات مثل <span class="hl">HubSpot</span> و<span class="hl">ActiveCampaign</span> تتيح إنشاء مسارات عمل (Workflows) تُرسل رسائل شخصية تلقائياً عند: ترك سلة الشراء، زيارة صفحة سعر، أو انقضاء 7 أيام بدون شراء. كل هذا بدون تدخل يدوي.</p>
+    <div class="stat-callout">
+      <div class="icon">⚡</div>
+      <div class="content">
+        <strong>أتمتة التسويق ترفع الإنتاجية بنسبة 14.5% وتخفّض تكاليف التسويق بـ 12.2%</strong>
+        <span>Nucleus Research — Marketing Automation Report (2023)</span><br>
+        <a href="https://nucleusresearch.com/research/single/marketing-automation-delivers-5-44-roi/" target="_blank">← المصدر</a>
+      </div>
+    </div>
+    <p>لوحة تحكم فعّالة تُظهر: معدل التحويل (CVR)، متوسط قيمة الطلب (AOV)، تكلفة الاكتساب (CPA)، ومعدل الاحتفاظ (Retention Rate). هذه الأربعة تكفيك للقرارات اليومية — كل شيء آخر هو ضوضاء.</p>
+  </div>
+
+  <div class="section-card" style="background: linear-gradient(135deg, rgba(124,58,237,0.1), rgba(6,182,212,0.07)); border-color: rgba(6,182,212,0.4);">
+    <div class="section-num">خلاصة</div>
+    <h2>الخطوة التالية لك الآن</h2>
+    <p>التسويق الرقمي في 2025 ليس سباق موارد — بل سباق دقة. الشركات الصغيرة التي تبني على بيانات حقيقية وتُشغّل أتمتة ذكية تتفوق يومياً على منافسين أكبر بميزانيات أضخم.</p>
+    <p>اختر محطة واحدة من الخمس الآن — ابدأ بها هذا الأسبوع. لا تحاول تطبيق الكل دفعة واحدة. الاتساق في خطوة واحدة أقوى من الكمال في خمس خطوات متوقفة.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="180" height="54">
+        <defs>
+          <linearGradient id="neonGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#7c3aed"/>
+            <stop offset="50%" stop-color="#06b6d4"/>
+            <stop offset="100%" stop-color="#ec4899"/>
+          </linearGradient>
+          <filter id="glow2">
+            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+            <feMerge>
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <text x="200" y="50" font-family="'Orbitron', monospace" font-size="36" font-weight="900" fill="url(#neonGrad2)" text-anchor="middle" filter="url(#glow2)" letter-spacing="4">EDMIEUS</text>
+        <line x1="90" y1="65" x2="170" y2="65" stroke="#7c3aed" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.6"/>
+        <circle cx="175" cy="65" r="2" fill="#06b6d4" opacity="0.8"/>
+        <line x1="225" y1="65" x2="310" y2="65" stroke="#7c3aed" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.6"/>
+        <text x="200" y="88" font-family="'Orbitron', monospace" font-size="12" fill="#94a3b8" text-anchor="middle" letter-spacing="5" opacity="0.8">AI AUTOMATION</text>
+      </svg>
+      <p>منصة متخصصة في أتمتة الأعمال بالذكاء الاصطناعي، بناء الأنظمة الذكية، وصناعة المحتوى الرقمي الاحترافي.</p>
+    </div>
+    <div class="footer-links">
+      <h4>روابط سريعة</h4>
+      <ul><li><a href="#">الرئيسية</a></li><li><a href="#">خدماتنا</a></li><li><a href="#">معرض الأعمال</a></li><li><a href="#">تواصل معنا</a></li></ul>
+    </div>
+    <div class="footer-links">
+      <h4>قانوني</h4>
+      <ul><li><a href="#">سياسة الخصوصية</a></li><li><a href="#">الشروط والأحكام</a></li><li><a href="#">سياسة الاسترداد</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Edmieus AI — جميع الحقوق محفوظة</span>
+    <span>تم إعداد هذا المحتوى بواسطة Edmieus AI | أتمتة · ذكاء اصطناعي · نتائج</span>
+  </div>
+</footer>
+</body>
+</html>
